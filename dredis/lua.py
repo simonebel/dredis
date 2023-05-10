@@ -1,6 +1,6 @@
 import json
 
-from lupa._lupa import LuaRuntime
+from lupa import LuaRuntime
 
 from dredis.commands import run_command, SimpleString
 from dredis.exceptions import CommandNotFound, RedisScriptError, DredisError
