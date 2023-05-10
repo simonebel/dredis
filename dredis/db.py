@@ -346,7 +346,7 @@ class DBManager(object):
     def open_db(self, path):
         db_factory = DB_BACKENDS[self._db_backend]
         options = self._db_backend_options
-        return db_factory(bytes(path), **options)
+        return db_factory(path.encode(), **options)
 
     def get_db(self, db_id):
         return self._dbs[str(db_id)]['db']
