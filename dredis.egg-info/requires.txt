@@ -1,5 +1,0 @@
-lupa
-six
-plyvel
-lmdb
-python-lzf
